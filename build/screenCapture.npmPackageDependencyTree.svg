@@ -1,0 +1,31 @@
+<svg height="446" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="446" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">1 megabytes</tspan>
+<tspan x="10" y="42">└─┬ retext@5.0.0 </tspan>
+<tspan x="10" y="58">  ├─┬ retext-latin@2.0.0 </tspan>
+<tspan x="10" y="74">  │ ├─┬ parse-latin@4.0.0 </tspan>
+<tspan x="10" y="90">  │ │ ├─┬ unist-util-modify-children@1.1.0 </tspan>
+<tspan x="10" y="106">  │ │ │ └── array-iterate@1.1.0 </tspan>
+<tspan x="10" y="122">  │ │ └── unist-util-visit-children@1.1.0 </tspan>
+<tspan x="10" y="138">  │ └─┬ unherit@1.1.0 </tspan>
+<tspan x="10" y="154">  │   ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="170">  │   └── xtend@4.0.1 </tspan>
+<tspan x="10" y="186">  ├─┬ retext-stringify@2.0.0 </tspan>
+<tspan x="10" y="202">  │ └── nlcst-to-string@2.0.0 </tspan>
+<tspan x="10" y="218">  └─┬ unified@6.1.1 </tspan>
+<tspan x="10" y="234">    ├── bail@1.0.1 </tspan>
+<tspan x="10" y="250">    ├── extend@3.0.0 </tspan>
+<tspan x="10" y="266">    ├─┬ has@1.0.1 </tspan>
+<tspan x="10" y="282">    │ └── function-bind@1.1.0 </tspan>
+<tspan x="10" y="298">    ├── is-plain-obj@1.1.0 </tspan>
+<tspan x="10" y="314">    ├── isarray@2.0.1 </tspan>
+<tspan x="10" y="330">    ├── trough@1.0.0 </tspan>
+<tspan x="10" y="346">    ├─┬ vfile@2.0.1 </tspan>
+<tspan x="10" y="362">    │ ├── is-buffer@1.1.5 </tspan>
+<tspan x="10" y="378">    │ ├── replace-ext@1.0.0 </tspan>
+<tspan x="10" y="394">    │ └── unist-util-stringify-position@1.1.0 </tspan>
+<tspan x="10" y="410">    ├── x-is-function@1.0.4 </tspan>
+<tspan x="10" y="426">    └── x-is-string@0.1.0</tspan>
+</text>
+</svg>

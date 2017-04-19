@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.retext.retext">
+            function <span class="apidocSignatureSpan"></span>retext
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.retext.Compiler">
             function <span class="apidocSignatureSpan">retext.</span>Compiler
             <span class="apidocSignatureSpan">(tree)</span>
@@ -414,6 +423,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.retext.Parser.super_.prototype.tokenizeParagraphPlugins.11">
+            function <span class="apidocSignatureSpan">retext.Parser.super_.prototype.tokenizeParagraphPlugins.</span>11
+            <span class="apidocSignatureSpan">(parent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.retext.Parser.super_.prototype.tokenizeParagraphPlugins.2">
             function <span class="apidocSignatureSpan">retext.Parser.super_.prototype.tokenizeParagraphPlugins.</span>2
             <span class="apidocSignatureSpan">(parent)</span>
@@ -600,6 +618,31 @@
 
 
     <h2>
+        <a href="#apidoc.element.retext.retext" id="apidoc.element.retext.retext">
+        function <span class="apidocSignatureSpan"></span>retext
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function processor() {
+  var destination = unified();
+  var length = attachers.length;
+  var index = -1;
+
+  while (++index &lt; length) {
+    destination.use.apply(null, attachers[index]);
+  }
+
+  destination.data(extend(true, {}, namespace));
+
+  return destination;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.retext.Compiler" id="apidoc.element.retext.Compiler">
         function <span class="apidocSignatureSpan">retext.</span>Compiler
         <span class="apidocSignatureSpan">(tree)</span>
@@ -715,7 +758,7 @@
     transformer = null;
 
     if (options === false) {
-      return;
+      continue;
     }
 
     if (options === true) {
@@ -971,7 +1014,7 @@ Yields:
   assertUnfrozen('use', frozen);
 
   if (value === null || value === undefined) {
-<span class="apidocCodeCommentSpan">    /* empty */
+<span class="apidocCodeCommentSpan">    /* Empty */
 </span>  } else if (func(value)) {
     addPlugin.apply(null, arguments);
   } else if (typeof value === 'object') {
@@ -1017,7 +1060,7 @@ Yields:
     var index;
 
     if (plugins === null || plugins === undefined) {
-      /* empty */
+      /* Empty */
     } else if (array(plugins)) {
       length = plugins.length;
       index = -1;
@@ -1538,6 +1581,27 @@ module.exports = unified()
         </a>
     </h2>
     <ul>
+    <li>description and source-code<pre class="apidocCodePre">function iterator(parent) {
+  var children = parent &amp;&amp; parent.children;
+
+  if (!children) {
+    throw new Error('Missing children in `parent` for `modifier`');
+  }
+
+  return iterate(children, callback, parent);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.retext.Parser.super_.prototype.tokenizeParagraphPlugins.11" id="apidoc.element.retext.Parser.super_.prototype.tokenizeParagraphPlugins.11">
+        function <span class="apidocSignatureSpan">retext.Parser.super_.prototype.tokenizeParagraphPlugins.</span>11
+        <span class="apidocSignatureSpan">(parent)</span>
+        </a>
+    </h2>
+    <ul>
     <li>description and source-code<pre class="apidocCodePre">function visitor(parent) {
   var index = -1;
   var children = parent &amp;&amp; parent.children;
@@ -1625,17 +1689,14 @@ module.exports = unified()
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function visitor(parent) {
-  var index = -1;
+    <li>description and source-code<pre class="apidocCodePre">function iterator(parent) {
   var children = parent &amp;&amp; parent.children;
 
   if (!children) {
-    throw new Error('Missing children in `parent` for `visitor`');
+    throw new Error('Missing children in `parent` for `modifier`');
   }
 
-  while (++index in children) {
-    callback(children[index], index, parent);
-  }
+  return iterate(children, callback, parent);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1673,14 +1734,17 @@ module.exports = unified()
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function iterator(parent) {
+    <li>description and source-code<pre class="apidocCodePre">function visitor(parent) {
+  var index = -1;
   var children = parent &amp;&amp; parent.children;
 
   if (!children) {
-    throw new Error('Missing children in `parent` for `modifier`');
+    throw new Error('Missing children in `parent` for `visitor`');
   }
 
-  return iterate(children, callback, parent);
+  while (++index in children) {
+    callback(children[index], index, parent);
+  }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>

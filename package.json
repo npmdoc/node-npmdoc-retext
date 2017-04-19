@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "retext",
-    "description": "api documentation for [retext (v5.0.0)](https://github.com/wooorm/retext) [![npm package](https://img.shields.io/npm/v/npmdoc-retext.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-retext) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-retext.svg)](https://travis-ci.org/npmdoc/node-npmdoc-retext)",
+    "description": "#### api documentation for  [retext (v5.0.0)](https://github.com/wooorm/retext)  [![npm package](https://img.shields.io/npm/v/npmdoc-retext.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-retext) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-retext.svg)](https://travis-ci.org/npmdoc/node-npmdoc-retext)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "retext": "*",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
